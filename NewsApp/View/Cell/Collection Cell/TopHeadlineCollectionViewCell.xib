@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopHeadlineCollectionViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOq-2w-INs">
+                        <rect key="frame" x="4" y="4" width="232" height="232"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dtn-SS-MO8">
+                                <rect key="frame" x="0.0" y="0.0" width="232" height="139.33333333333334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dtn-SS-MO8" secondAttribute="height" multiplier="2:1.2" id="7U2-Cl-5Jv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axm-NR-SgO">
+                                <rect key="frame" x="12" y="143.33333333333334" width="208" height="31"/>
+                                <string key="text">Label
+Title</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5W-A2-ITR">
+                                <rect key="frame" x="12" y="175.33333333333334" width="208" height="30.333333333333343"/>
+                                <string key="text">Label
+description
+Label</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgR-50-uzW">
+                                <rect key="frame" x="12" y="209.66666666666666" width="136" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04/08/2024" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzp-Kx-zUt">
+                                <rect key="frame" x="156" y="209.66666666666666" width="64" height="14.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="pAF-ea-EVy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fzp-Kx-zUt" firstAttribute="centerY" secondItem="bgR-50-uzW" secondAttribute="centerY" id="0Bw-QE-qdf"/>
+                            <constraint firstAttribute="bottom" secondItem="bgR-50-uzW" secondAttribute="bottom" constant="8" id="1lI-2U-nwV"/>
+                            <constraint firstItem="dtn-SS-MO8" firstAttribute="top" secondItem="UOq-2w-INs" secondAttribute="top" id="9nz-FI-s4x"/>
+                            <constraint firstItem="V5W-A2-ITR" firstAttribute="trailing" secondItem="axm-NR-SgO" secondAttribute="trailing" id="B5V-Lt-i6b"/>
+                            <constraint firstItem="axm-NR-SgO" firstAttribute="leading" secondItem="UOq-2w-INs" secondAttribute="leading" constant="12" id="NJE-Tb-V8g"/>
+                            <constraint firstItem="bgR-50-uzW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="V5W-A2-ITR" secondAttribute="bottom" constant="2" id="Vnf-tC-XQt"/>
+                            <constraint firstAttribute="trailing" secondItem="axm-NR-SgO" secondAttribute="trailing" constant="12" id="WcT-Fs-Kxm"/>
+                            <constraint firstItem="bgR-50-uzW" firstAttribute="leading" secondItem="UOq-2w-INs" secondAttribute="leading" constant="12" id="bvn-ED-WFd"/>
+                            <constraint firstItem="dtn-SS-MO8" firstAttribute="leading" secondItem="UOq-2w-INs" secondAttribute="leading" id="eTm-0p-1mF"/>
+                            <constraint firstItem="fzp-Kx-zUt" firstAttribute="leading" secondItem="bgR-50-uzW" secondAttribute="trailing" constant="8" id="fhi-Dj-Pk7"/>
+                            <constraint firstItem="axm-NR-SgO" firstAttribute="top" secondItem="dtn-SS-MO8" secondAttribute="bottom" constant="4" id="hnW-xf-lwi"/>
+                            <constraint firstItem="V5W-A2-ITR" firstAttribute="top" secondItem="axm-NR-SgO" secondAttribute="bottom" constant="1" id="j7c-01-S5U"/>
+                            <constraint firstAttribute="trailing" secondItem="dtn-SS-MO8" secondAttribute="trailing" id="jAa-A8-Tje"/>
+                            <constraint firstItem="V5W-A2-ITR" firstAttribute="leading" secondItem="axm-NR-SgO" secondAttribute="leading" id="p66-lW-suP"/>
+                            <constraint firstAttribute="trailing" secondItem="fzp-Kx-zUt" secondAttribute="trailing" constant="12" id="y5b-WN-ULj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="UOq-2w-INs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="2XY-K2-sFH"/>
+                <constraint firstAttribute="bottom" secondItem="UOq-2w-INs" secondAttribute="bottom" constant="4" id="KvX-9r-sQg"/>
+                <constraint firstAttribute="trailing" secondItem="UOq-2w-INs" secondAttribute="trailing" constant="4" id="vOU-jo-I5f"/>
+                <constraint firstItem="UOq-2w-INs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="yPg-7d-JGH"/>
+            </constraints>
+            <connections>
+                <outlet property="newsContentView" destination="UOq-2w-INs" id="3wI-y9-mJR"/>
+                <outlet property="newsDateLabel" destination="fzp-Kx-zUt" id="FWR-da-4kq"/>
+                <outlet property="newsDescriptionLabel" destination="V5W-A2-ITR" id="oqg-UK-mao"/>
+                <outlet property="newsImageView" destination="dtn-SS-MO8" id="qIm-XB-rzG"/>
+                <outlet property="newsSourceLabel" destination="bgR-50-uzW" id="gmL-P5-362"/>
+                <outlet property="newsTitleLabel" destination="axm-NR-SgO" id="DyO-lp-Z7r"/>
+            </connections>
+            <point key="canvasLocation" x="10.687022900763358" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
